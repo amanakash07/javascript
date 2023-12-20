@@ -41,3 +41,16 @@ const obj3 = {5: "a", 6: "b"}
 
 const obj4 = {...obj1, ...obj2, ...obj3}
 console.log(obj4);
+
+
+const course = {
+    coursename: "js",
+    price: "999",
+    courseInstructor: "Aman"
+}
+
+const {courseInstructor} = course
+console.log(courseInstructor); //Aman
+
+const {courseInstructor: Instructor} = course
+console.log(Instructor); //Aman - by using this method we can destruct our object
